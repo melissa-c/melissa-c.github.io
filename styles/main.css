@@ -1,0 +1,19 @@
+body{
+  font-family: helvetica;
+  font-size: 12;
+  color: #666;
+  background: #999;
+}
+
+h1,h2,h3{
+  font-size: 20;
+  color: #000;
+}
+
+a{
+  text-decoration: underline;
+}
+
+a:visited{
+  color: #cc3300;
+}
