@@ -1,0 +1,119 @@
+WISHLIST:
+- search function/bar/area
+- fixed header at top of screen
+- fixed menu at side of screen
+- drop down menu
+- fixed positioning of background text/images
+- layout in boxes with responsive design that changes the boxes when screen is different size
+- responsive design changing number of columns of text with width of screen
+- interactive elements when mouse hovers
+
+
+==================================================
+
+http://www.csszengarden.com/216/
+
+/*fixed positioning of background text/images*/
+
+@media screen and (min-width: 840px) {
+    header[role=banner], .summary {
+        position: fixed;
+    }
+
+==================================================
+http://www.csszengarden.com/217/
+
+/*layout in boxes with responsive design that changes the boxes when screen is different size*/
+
+div,
+article,
+section,
+header,
+footer,
+nav,
+figure,
+li				{ position:relative; } /* For absolutely positioning elements within containers  */
+
+
+aside.sidebar		{ background:rgba(246,247,146,0.9); padding:5%; }
+aside.sidebar ul	{ padding:0.5em 0 2em 0; }
+aside.sidebar ul li	{ color:rgba(0,0,0,0.4); list-style:none; margin:0; padding:0 0 0.825em 0; }
+
+/* 550 and up */	
+@media screen and (min-width:550px) {
+
+h2 				{ font-size:8em; }
+section.intro 		{ width:66.6%; }
+aside.sidebar 		{position:absolute;right:0;top:2.5%;width:32.75%;}
+
+==================================================
+
+
+http://www.csszengarden.com/218/
+
+/*responsive design changing number of columns of text with width of screen*/
+
+@media (min-width:600px) {
+body {
+font-size: 1.12em;
+line-height: 1.6;
+}
+  
+  .intro p,
+  .preamble,
+  .design-selection,
+  .design-selection ul,
+  .design-archives,
+  .zen-resources ul,
+  .participation p,
+  .benefits h3,
+  .benefits p {
+    max-width: 30rem;
+  }
+  
+/* ------- OMG FLEXBOX ------ */
+.page-wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -moz-box-orient: vertical;
+  -webkit-box-orient: vertical;
+  -ms-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.intro {
+  -webkit-box-ordinal-group: 1;  
+  -moz-box-ordinal-group: 1;     
+  -ms-flex-order: 1;     
+  -webkit-order: 1;  
+  order: 1;
+  align-self: flex-start;
+  width: 100%;
+}
+
+.main {
+  -webkit-box-ordinal-group: 3;  
+  -moz-box-ordinal-group: 3;     
+  -ms-flex-order: 3;     
+  -webkit-order: 3;  
+  order: 3;
+  align-self: flex-start;
+  width: 100%;
+}
+
+.sidebar {
+  -webkit-box-ordinal-group: 2;  
+  -moz-box-ordinal-group: 2;     
+  -ms-flex-order: 2;     
+  -webkit-order: 2;  
+  order: 2;
+}
+
+http://www.csszengarden.com/219/
+
+/*interactive elements when mouse hovers*/
