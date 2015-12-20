@@ -107,7 +107,7 @@ footer {
   display: block;
   float: right;
   width: 140px;
-  padding: 15px 0 15px 20px;
+  padding: 15px 10px;
 }
 
 .tab1 {
@@ -122,28 +122,33 @@ background-color: #6600cc;
 background-color: #990000;
 }
 
-.home, .blog1, .blog2, .blog3, .blog4 {
+.home, 
+.blog1, .blog2, .blog3, .blog4, .blog5 {
   padding: 10px 20px 20px 20px;
   margin-left: 160px;
 }
 
 .home {
-  background-color: #004c4d;
+  background-color: #003333;
 }
 
 .blog1 {
-  background-color: #007f80;
+  background-color: #007373;
 }
 
 .blog2 {
-  background-color: #009999;
+  background-color: #007f80;
 }
 
 .blog3 {
-  background-color: #00b2b3;
+  background-color: #009999;
 }
 
 .blog4 {
+  background-color: #00b2b3;
+}
+
+.blog5 {
   background-color: #00cccc;
 }
 
@@ -178,9 +183,6 @@ h2 {
   font-size: 16px;
   text-transform: uppercase;
   color: #000;
-  padding: 10px;
-  margin-bottom: -12px;
-  background-color: #00a3ff;
 }  
 
 h3 {
