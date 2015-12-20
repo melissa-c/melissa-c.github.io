@@ -1,0 +1,139 @@
+/** {
+    border: 1px solid red !important;
+}*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+.grid {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.row {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: flex;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.logo {
+    width: 100%;
+}
+
+.header {
+    border-bottom: 3px solid #999;
+}
+
+.left-most {
+    margin-right: 10px;
+}
+
+.middle {
+    margin: 0 5px;
+}
+
+.right-most {
+    margin-left: 10px;
+}
+
+
+h1, h2, h3, h4,
+p {
+    margin: 0;
+}
+
+
+h1, h2, h4 {
+    text-transform: uppercase;
+}
+
+h1, h2 {
+    text-align: right;
+    letter-spacing: 0.1em;
+}
+
+h4, p {
+    text-align: center;
+}
+
+h1 {
+    font-size: 45px;
+    line-height: 1.4em;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 30px;
+    color: #999;
+}
+
+h4 {
+    font-size: 35px;
+}
+
+@media only screen and (max-width: 500px) {
+    p {
+        display: none;
+    }
+}

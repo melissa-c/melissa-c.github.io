@@ -122,7 +122,7 @@ background-color: #6600cc;
 background-color: #990000;
 }
 
-.home, .blog1, .blog2, .blog3 {
+.home, .blog1, .blog2, .blog3, .blog4 {
   padding: 10px 20px 20px 20px;
   margin-left: 160px;
 }
@@ -141,6 +141,10 @@ background-color: #990000;
 
 .blog3 {
   background-color: #00b2b3;
+}
+
+.blog4 {
+  background-color: #00cccc;
 }
 
 .home > h1 {
