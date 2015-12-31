@@ -33,12 +33,35 @@ body {
 }
 
 .primary-nav li {
-  padding: 0.5rem 0;
+  display: block;
+  overflow: hidden;
+  padding: 1.2rem 0;
   margin: 0;
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
 }
+
+
+
+
+.tab1 {
+  background-color: #008080;
+}
+
+.tab2 {
+  background-color: #b01902;
+}
+
+.tab3 {
+  background-color: #6f03dc;
+}
+
+.tab4 {
+  background-color: #013365;
+}
+
+
 
 a {
   text-decoration: none;
