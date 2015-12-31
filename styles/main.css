@@ -11,10 +11,23 @@ a {
   text-decoration: none;
 }
 
+a:hover,
+a:active {
+  color: #00ffff;
+}
+
 
 /*HEADER --------------*/
+header .container {
+  background: #000;
+}
+
 .header-logo {
   background: #000;
+  position: fixed;
+  width: 85%;
+  top: 0;
+  z-index: 998;
 }
 
 .header-logo img {
@@ -22,17 +35,19 @@ a {
   width: 6rem;
 }
 
-.header-logo h1 {
+h1 {
   display: inline-block;
   overflow: hidden;
   margin: 1.5rem 0;
   text-transform: uppercase;
   font-family: 'Lato', sans-serif;
   letter-spacing: 0.01em;
+  color: #fff;
 }
 
-.primary-nav ul {
+.primary-nav {
   list-style: none;
+  margin-top: 9rem;
   margin-bottom: 0;
 }
 
@@ -44,6 +59,7 @@ a {
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
+  color: #fff;
 }
 
 
@@ -67,11 +83,20 @@ a {
 
 /*MAIN BODY --------------*/
 
-.container > .tab1,
-.container > .tab2,
-.container > .tab3,
-.container > .tab4 {
+.tab1,
+.tab2,
+.tab3,
+.tab4 {
   padding: 2rem;
+}
+
+.tab1 p {
+  text-align: center;
+}
+
+h3 {
+  font-size: 2.6rem;
+  text-align: center;
 }
 
 
@@ -93,3 +118,71 @@ footer img {
 footer p {
   margin-bottom: 0.2rem;
 }
+
+
+/*BIGGER THAN 550px --------------*/
+
+@media only screen and (min-width: 550px) {
+  
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 998;
+  }
+
+
+  .header-logo {
+    width: 80%;
+  }
+
+  .primary-nav {
+    float: right;
+    margin: 10rem 0 -1rem 0;
+  }
+
+  .primary-nav li {
+    display: inline-block;
+    width: 10rem;
+    margin-left: -0.5rem;
+    margin-right: -0.1rem
+  }
+
+  .tab1,
+  .tab2,
+  .tab3,
+  .tab4 {
+    margin-top: 14rem;
+  }
+
+  .tab1 p {
+    text-align: left;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+   footer img {
+   position: relative;
+   top: 0;
+   left: 0;
+  }
+
+
+
+/*BIGGER THAN 750px --------------*/
+
+
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
+
+
+
+
+}
+
