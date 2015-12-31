@@ -1,0 +1,45 @@
+body {
+  max-width: 800px;
+}
+
+.container {
+
+}
+
+.row {
+
+}
+
+.header-logo {
+  background: #000;
+}
+
+.header-logo img {
+  margin: 1rem 2rem;
+  width: 6rem;
+}
+
+.header-logo h1 {
+  display: inline-block;
+  overflow: hidden;
+  margin: 1.5rem 0;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 0.01em;
+}
+
+.primary-nav ul {
+  list-style: none;
+}
+
+.primary-nav li {
+  padding: 0.5rem 0;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
