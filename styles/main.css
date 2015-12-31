@@ -1,11 +1,8 @@
 body {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
-.container {
-  margin: 0 auto;
-}
 
 a {
   text-decoration: none;
@@ -123,7 +120,7 @@ footer p {
 /*BIGGER THAN 550px --------------*/
 
 @media only screen and (min-width: 550px) {
-  
+
   header {
     position: fixed;
     width: 100%;
@@ -131,28 +128,24 @@ footer p {
     z-index: 998;
   }
 
-
   .header-logo {
     width: 80%;
   }
 
   .primary-nav {
-    float: right;
-    margin: 10rem 0 -1rem 0;
+    display: flex;
+    margin-top: 10rem;
   }
 
   .primary-nav li {
-    display: inline-block;
-    width: 10rem;
-    margin-left: -0.5rem;
-    margin-right: -0.1rem
+    flex-grow: 1;
   }
 
   .tab1,
   .tab2,
   .tab3,
   .tab4 {
-    margin-top: 14rem;
+    margin-top: 14.5rem;
   }
 
   .tab1 p {
@@ -168,21 +161,30 @@ footer p {
    top: 0;
    left: 0;
   }
-
-
+}
 
 /*BIGGER THAN 750px --------------*/
+@media only screen and (min-width: 750px) {
+
+  h3 {
+    font-size: 2.3rem;
+  }
+}
 
 
+/*BIGGER THAN 1000px --------------*/
+@media only screen and (min-width: 1000px) {
 
-/* Larger than desktop */
-@media (min-width: 1000px) {}
+  header {
+   max-width: 1000px;
+  }
 
-/* Larger than Desktop HD */
-@media (min-width: 1200px) {}
+  .header-logo {
+   width: 50%;
+  }
 
-
-
-
+  h3 {
+    font-size: 2.8rem;
+  }
 }
 
