@@ -1,15 +1,18 @@
 body {
   max-width: 800px;
+  margin: 0 auto;
 }
 
 .container {
-
+  margin: 0 auto;
 }
 
-.row {
-
+a {
+  text-decoration: none;
 }
 
+
+/*HEADER --------------*/
 .header-logo {
   background: #000;
 }
@@ -30,6 +33,7 @@ body {
 
 .primary-nav ul {
   list-style: none;
+  margin-bottom: 0;
 }
 
 .primary-nav li {
@@ -43,8 +47,7 @@ body {
 }
 
 
-
-
+/*TAB STYLES --------------*/
 .tab1 {
   background-color: #008080;
 }
@@ -62,7 +65,31 @@ body {
 }
 
 
+/*MAIN BODY --------------*/
 
-a {
-  text-decoration: none;
+.container > .tab1,
+.container > .tab2,
+.container > .tab3,
+.container > .tab4 {
+  padding: 2rem;
+}
+
+
+/*FOOTER --------------*/
+footer .container {
+  background: #000;
+  text-align: center;
+  color: #fff;
+  padding: 1.5rem;
+}
+
+footer img {
+  width: 4rem;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+
+footer p {
+  margin-bottom: 0.2rem;
 }
