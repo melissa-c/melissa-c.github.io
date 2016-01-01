@@ -3,18 +3,11 @@ body {
   margin: 0 auto;
 }
 
-
 a {
   text-decoration: none;
 }
 
-a:hover,
-a:active {
-  color: #00ffff;
-}
-
-
-/*HEADER --------------*/
+/*HEADER & NAVS --------------*/
 header .container {
   background: #000;
 }
@@ -59,6 +52,42 @@ h1 {
   color: #fff;
 }
 
+.secondary-nav {
+  list-style: none;
+}
+
+.secondary-nav li {
+  color: #fff;
+}
+
+.primary-nav a:visited, 
+.secondary-nav a:visited {
+  color: #fff;
+}
+
+.secondary-nav a:hover,
+.secondary-nav a:active {
+  font-weight: bold;
+}
+
+.primary-nav a:hover, 
+.primary-nav a:active, 
+a:hover,
+a:active {
+  color: #00ffff;
+}
+
+a h1:hover, 
+a h1:active {
+  color: #008080;
+}
+
+header a img:hover, 
+header a img:active {
+  background: #008080;
+  border-radius: 50%;
+}
+
 
 /*TAB STYLES --------------*/
 .tab1 {
@@ -94,6 +123,39 @@ h1 {
 h3 {
   font-size: 2.6rem;
   text-align: center;
+}
+
+
+/*POST STYLES --------------*/
+
+.post1,
+.post2,
+.post3,
+.post4,
+.post5 {
+  padding: 1rem;
+  margin: 0;
+}
+
+
+.post1 {
+  background-color: #01407e;
+}
+
+.post2 {
+  background-color: #014d98;
+}
+
+.post3 {
+  background-color: #015ab1;
+}
+
+.post4 {
+  background-color: #0267ca;
+}
+
+.post5 {
+  background-color: #0274e4;
 }
 
 
