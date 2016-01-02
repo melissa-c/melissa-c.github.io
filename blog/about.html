@@ -2,37 +2,92 @@
 <html>
   <head>
     <title>Mel's Blog</title>
+    
     <meta charset="UTF-8">
-    <link href="../styles/main.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:900' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" href="../styles/main.css">
   </head>
 
-   <body>
+
+  <body>
     <header>
-      <div class="logo">
-        <a href="../index.html">
-          <p>Mel's Blog</p>
-        </a>
+      <div class="container">
+        <div class="row">
+        <div class="twelve columns">
+            <a href="../index.html" class="header-logo">
+              <img src="../img/mel-logo-icon_wht_100x100.png" alt="mel logo">
+              <h1>Mel's Blog</h1>        
+            </a>
+          </div>
+        </div>
       </div>
 
-      <nav class="primary-nav">
-        <ul>
-          <li><a href="../index.html" class="tab1">Blogs</a></li>
-          <li><a href="about.html" class="tab2">About</a></li>
-          <li><a href="contact.html" class="tab3">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="container">
+        <div class="row">
+          <div class="twelve columns">
+            <ul class="primary-nav">
+              <a href="../index.html">
+                <li class="tab1">Home</li>
+              </a>
+              <a href="about.html">
+                <li class="tab2">About</li>
+              </a>
+              <a href="contact.html">
+                <li class="tab3">Contact</li>
+              </a>
+              <a href="blog-template.html">
+                <li class="tab4">Blogs</li>
+              </a>
+            </ul>
+          </div>
+        </div>  
+      </div>
     </header>
 
 
-    <div class="tab2">
-      <main>
-            <img src="../img/calvin.jpg" width="660" height="495" alt="facial expressions of calvin from calvin and hobbes">
-      </main>
+    
+    <div class="container tab2">
+      <div class="row">
+        <div class="four columns">
+          <p>
+            Learning to code. Trying to make a positive difference. Loving dark chocolate. Enjoying exploring a new city.  
+          </p>
+        </div>
+
+
+        <div class="eight columns">
+          <img class="u-max-full-width" src="../img/calvin.jpg" alt="facial expressions of calvin from calvin and hobbes">
+        </div>
+      </div>
     </div>
 
+
     <footer>
-      <p>&copy; 2015 Melissa Chan</p>
+      <div class="container">
+        <div class="row">
+          <div class="four columns">
+            <p>&copy; 2016 Melissa Chan</p>
+          </div>
+
+          <div class="four columns">
+            <a href="index.html">
+              <img src="../img/mel-logo-icon_wht_100x100.png" alt="mel logo">
+            </a>
+          </div>
+
+          <div class="four columns">
+            <a href="http://slipsum.com/">
+              Disclaimer
+            </a>
+          </div>
+        </div>
+      </div>
     </footer>
+  
   </body>
-    
 </html>

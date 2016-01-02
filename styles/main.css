@@ -1,11 +1,45 @@
 body {
   max-width: 1000px;
   margin: 0 auto;
+  color: #fff;
+}
+
+p,
+a,
+li {
+  color: #fff;
+
 }
 
 a {
   text-decoration: none;
 }
+
+a img:hover,
+a img:active {
+  opacity: 0.7;
+}
+
+h2 {
+  text-transform: uppercase;
+  color: #9E9E9E;
+  font-size: 3rem;
+}
+
+li {
+  list-style-position: outside;
+  margin-left: 2rem;
+}
+
+.credit {
+  text-align: right;
+}
+
+a .credit:hover,
+a .credit:active {
+  color: #00ffff;
+}
+
 
 /*HEADER & NAVS --------------*/
 header .container {
@@ -41,7 +75,7 @@ h1 {
   margin-bottom: 0;
 }
 
-.primary-nav li {
+.primary-nav a li {
   display: block;
   overflow: hidden;
   padding: 1.2rem 0;
@@ -60,18 +94,22 @@ h1 {
   color: #fff;
 }
 
+.mobile-view {
+  display: none;
+}
+
 .primary-nav a:visited, 
 .secondary-nav a:visited {
   color: #fff;
 }
 
-.secondary-nav a:hover,
-.secondary-nav a:active {
+.secondary-nav a li:hover,
+.secondary-nav a li:active {
   font-weight: bold;
 }
 
-.primary-nav a:hover, 
-.primary-nav a:active, 
+.primary-nav a li:hover, 
+.primary-nav a li:active, 
 a:hover,
 a:active {
   color: #00ffff;
@@ -86,6 +124,7 @@ header a img:hover,
 header a img:active {
   background: #008080;
   border-radius: 50%;
+  opacity: 1;
 }
 
 
@@ -120,9 +159,23 @@ header a img:active {
   text-align: center;
 }
 
+.tab1 h3 {
+  color: #000;
+  font-weight: bold;
+}
+
+
 h3 {
   font-size: 2.6rem;
+  font-weight: medium;
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  color: #9E9E9E;
+}
+
+h2 + p em {
+  color: #fff;
 }
 
 
@@ -135,6 +188,14 @@ h3 {
 .post5 {
   padding: 1rem;
   margin: 0;
+}
+
+section.post1,
+section.post2,
+section.post3,
+section.post4,
+section.post5 {
+  padding: 2rem;
 }
 
 
@@ -183,6 +244,11 @@ footer p {
 
 @media only screen and (min-width: 550px) {
 
+  .mobile-view {
+    display: block;
+  }
+
+
   header {
     position: fixed;
     width: 100%;
@@ -199,10 +265,14 @@ footer p {
     margin-top: 10rem;
   }
 
-  .primary-nav li {
+  .primary-nav a {
     flex-grow: 1;
   }
-
+ 
+  .secondary-nav {
+    margin-right: -13%;
+  } 
+  
   .tab1,
   .tab2,
   .tab3,
@@ -228,6 +298,10 @@ footer p {
 /*BIGGER THAN 750px --------------*/
 @media only screen and (min-width: 750px) {
 
+  h2 {
+    font-size: 3.8rem;
+  }
+
   h3 {
     font-size: 2.3rem;
   }
@@ -243,6 +317,10 @@ footer p {
 
   .header-logo {
    width: 50%;
+  }
+
+  h2 {
+    font-size: 4rem;
   }
 
   h3 {
