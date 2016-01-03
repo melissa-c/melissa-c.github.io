@@ -198,7 +198,8 @@ h2 + p em {
 .post3,
 .post4,
 .post5,
-.post6 {
+.post6,
+.post7 {
   padding: 1rem;
   margin: 0;
 }
@@ -208,7 +209,8 @@ section.post2,
 section.post3,
 section.post4,
 section.post5,
-section.post6 {
+section.post6,
+section.post7 {
   padding: 2rem;
 }
 
@@ -235,6 +237,10 @@ section.post6 {
 
 .post6 {
   background-color: #022db1;
+}
+
+.post7 {
+  background-color: #0233ca;
 }
 
 
