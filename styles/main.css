@@ -8,7 +8,11 @@ p,
 a,
 li {
   color: #fff;
+}
 
+h5 {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
 }
 
 a {
@@ -31,6 +35,10 @@ li {
   margin-left: 2rem;
 }
 
+li li {
+  margin-left: -1rem;
+}
+
 .credit {
   text-align: right;
 }
@@ -40,6 +48,10 @@ a .credit:active {
   color: #00ffff;
 }
 
+
+img + h3 {
+  margin-top: 2rem;
+}
 
 /*HEADER & NAVS --------------*/
 header .container {
@@ -185,7 +197,8 @@ h2 + p em {
 .post2,
 .post3,
 .post4,
-.post5 {
+.post5,
+.post6 {
   padding: 1rem;
   margin: 0;
 }
@@ -194,7 +207,8 @@ section.post1,
 section.post2,
 section.post3,
 section.post4,
-section.post5 {
+section.post5,
+section.post6 {
   padding: 2rem;
 }
 
@@ -219,6 +233,10 @@ section.post5 {
   background-color: #0274e4;
 }
 
+.post6 {
+  background-color: #022db1;
+}
+
 
 /*FOOTER --------------*/
 footer .container {
@@ -238,6 +256,7 @@ footer img {
 footer p {
   margin-bottom: 0.2rem;
 }
+
 
 
 /*BIGGER THAN 550px --------------*/
