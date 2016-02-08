@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mel's Blog</title>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:900' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" href="../styles/main.css">
+  </head>
+
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+        <div class="twelve columns">
+            <a href="../index.html" class="header-logo">
+              <img src="../img/mel-logo-icon_wht_100x100.png" alt="mel logo">
+              <h1>Mel's Blog</h1>        
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="twelve columns">
+            <ul class="primary-nav">
+              <a href="../index.html">
+                <li class="tab1">Home</li>
+              </a>
+              <a href="about.html">
+                <li class="tab2">About</li>
+              </a>
+              <a href="contact.html">
+                <li class="tab3">Contact</li>
+              </a>
+              <a href="blog-template.html">
+                <li class="tab4">Blogs</li>
+              </a>
+            </ul>
+          </div>
+        </div>  
+      </div>
+    </header>
+
+
+    
+    <div class="container tab4">
+      <div class="row">
+        <div class="four columns">
+            <ul class="secondary-nav mobile-view">
+              <a href="c1-reflection-blog.html">
+                <li class="post1">Fireside Reflections: C1</li>
+              </a>
+              <a href="c1-time-and-habits-blog.html">
+                <li class="post2">Time and Habits: C1</li>
+              </a>
+              <a href="t2-html-css-dom-p1.html">
+                <li class="post3">Udacity Reflection Part 1: T2</li>
+              </a>
+              <a href="t2-html-css-dom-p2.html">
+                <li class="post4">Udacity Reflection Part 2: T2</li>
+              </a>
+              <a href="c2-emotional-intelligence.html">
+                <li class="post5">Emotional Intelligence: C2</li>
+              </a>
+              <a href="t3-design-to-web-blog.html">
+                <li class="post6">Design to Web: T3</li>
+              </a> 
+              <a href="c3-meditation-process.html">
+                <li class="post7">Meditation and Process: C3</li>
+              </a>              
+              <a href="t4-javascript-basics.html">
+                <li class="post8">JavaScript Basics: T4</li>
+              </a>              
+              <a href="c4-daily-mindfulness.html">
+                <li class="post9">Daily Mindfulness: C4</li>
+              </a>              
+              <a href="c5-self-confidence.html">
+                <li class="post10">Self Confidence: C5</li>
+              </a>              
+              <a href="t5-problem-solving.html">
+                <li class="post11">Problem Solving: T5</li>
+              </a>              
+              <a href="t6-testing.html">
+                <li class="post12">Testing: T6</li>
+              </a>              
+              <a href="c6-control.html">
+                <li class="post13">Control: C6</li>
+              </a>              
+              <a href="c7-motivation.html">
+                <li class="post14">Motivation: C7</li>
+              </a>              
+            </ul>
+        </div>
+
+
+        <div class="eight columns">
+          <section class="post12">
+              
+            <h2>Testing</h2>
+
+            <p><em>T6: 8th Feb 2016</em></p>
+             
+            <h3>Explain to a non-tech friend:</h3>
+            <h4>What 'scope' is and how it works in JavaScript</h4>
+
+            <p>
+              There are two types of scope - global and local - and these refer to the availability of variables depending on whether the variable is declared inside (local scope) or outside (global scope) of a function.<br>
+              An analogy would be like the preparation of food between a child and parent. The parent can prepare food (a variable) and this food is available to anyone including the child (global scope). <br>
+              The child (a function) can also prepare food (a variable) but this food will only be available to the child (local scope) as the parent would not take food from their child.<br>
+              However, there is an exception to this one-way relationship. If a variable is assigned a value but has not been declared (by writing “var” before the variable name) then it becomes a global variable even if it is written inside of a function. So this exception would be like a child gifting some food to the parent.
+            </p>
+
+            <h4>In the javascript language, describe all the use cases for each of:</h4>
+
+            <p>
+              <strong>parentheses ()</strong> - e.g. '1. Execute a function var result = doSomething()'<br>
+              Grouping expressions where the expression in the parentheses is executed first, e.g.: a = (b + c) * d <br>
+              Containing expressions such as in a loop, e.g.: if (a < b)<br>
+              Containing parameters for functions, e.g.: function (a, b, c)
+            </p>
+
+            <p>
+              <strong>brackets []</strong><br>
+              For containing arrays, e.g.: array = [ a, b]<br>
+              For accessing a location in an array, e.g.: array[1]<br>
+              For accessing object properties, e.g.: object[a] = b
+            </p>
+
+            <p>
+              <strong>braces {}</strong><br>
+              For defining the start and end of a function and separate code into blocks inside functions, e.g.: <br>
+              function a() { <br>
+               if (a < b) {<br>
+               }<br>
+              }<br>
+              For declaring object literals, e.g.: var object = { key: value, key: value }
+            </p>
+
+            <p>
+              <strong>single quotes ''</strong> and <strong>double quotes ""</strong><br>
+              For containing strings, e.g.: ‘This string\’s saying “Hello” to you’<br>
+              There is no preference for single or double quotes but it is important to use them consistently, ensure that a different set of quotes is used within a string so the string is not cut off prematurely, and use the escape character (\) when needed for the same reason. 
+            </p>
+
+          </section>
+        </div>
+      </div>
+    </div>
+
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="four columns">
+            <p>&copy; 2016 Melissa Chan</p>
+          </div>
+          
+          <div class="four columns">
+            <a href="../index.html">
+              <img src="../img/mel-logo-icon_wht_100x100.png" alt="mel logo">
+            </a>
+          </div>
+
+          <div class="four columns">
+            <a href="http://slipsum.com/">
+              Disclaimer
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  
+  </body>
+</html>
